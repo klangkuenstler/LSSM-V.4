@@ -35,6 +35,6 @@ módulos longos têm abreviações não oficiais sob o desenvolvimento.
 
 :::tip O que vem a seguir?
 
-* Lê [how to create a Pull Request](./prs.md)
+* Lê [como criar um Pull Request](./prs.md)
 * Lê uma das secções especiais para tópicos de contribuição
   :::
