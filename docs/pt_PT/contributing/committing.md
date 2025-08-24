@@ -1,18 +1,19 @@
 ---
-title: Commit a file
-lang: en_US
+title: Fazer commit de um ficheiro
+lang: pt_PT
 sidebarDepth: 2
 ---
 
-# Committing a file
+# Fazer commit de um ficheiro
 
-After you changed a file you need to write a commit message. If you want to make us happy please
-use [gitmojis](https://gitmoji.dev) followed by the module name in square brackets and a quick summary (half sentence)
-what you changed (eg. translations). Some long module names got unofficial abbreviations over the development.
+Depois de modificares um ficheiro precisas de escrever uma mensagem na tua commit. Se nos queres
+deixar felizes, por favor, utiliza os [gitmojis](https://gitmoji.dev) seguido do nome do módulo entre
+parênteses retos e um breve resumo (meia frase) sobre o que modificaste (ex.: traduções). Alguns nomes de
+módulos longos têm abreviações não oficiais sob o desenvolvimento.
 
-## Abbreviation list
+## Lista de Abreviações
 
-| Abbreviation | Module                    | Submodule               |
+| Abreviação   | Módulo                    | Submódulo               |
 |--------------|---------------------------|-------------------------|
 | dcs          | dailyCreditsSummary       |                         |
 | eb           | extendedBuilding          |                         |
@@ -28,12 +29,12 @@ what you changed (eg. translations). Some long module names got unofficial abbre
 | sap          | ShareAlliancePost         |                         |
 | docs         | docs (main pages only)    |                         |
 | etr          | enhancedTransportRequests |                         |
-| hk           | hotkeys                   |                         |    
+| hk           | hotkeys                   |                         |
 
 ![](../images/contributing/committing/GH_commit_msg.png)
 
-:::tip What's next?
+:::tip O que vem a seguir?
 
-* Read [how to create a Pull Request](./prs.md)
-* Read one of the special sections for contribution topics
+* Lê [how to create a Pull Request](./prs.md)
+* Lê uma das secções especiais para tópicos de contribuição
   :::
