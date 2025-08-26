@@ -1,6 +1,6 @@
 {
     "name": "lss-manager-v4",
-    "version": "4.7.12+20250822.0712",
+    "version": "4.7.12+20250826.0740",
     "license": "CC-BY-NC-SA-4.0",
     "scripts": {
         "quickbuild": "./build/build.sh --quick",
@@ -94,7 +94,7 @@
         "sass-loader": "16.0.5",
         "simpleheat": "0.4.0",
         "terser": "5.43.1",
-        "ts-loader": "9.5.2",
+        "ts-loader": "9.5.4",
         "ts-node": "10.9.2",
         "typescript": "5.5.4",
         "url-loader": "4.1.1",
