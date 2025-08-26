@@ -1,13 +1,13 @@
 const modules = {
     appstore: {
         save: 'Guardar',
-        reset: 'Restabelecer',
+        reset: 'Repor',
         noMapkit:
-            '¡Este módulo não funciona com o tipo de mapa "Mapkit" devido a limitações do Mapkit!',
-        dev: 'Este módulo continua em desenvolvimento. Ativa-lo pode provocar funcionalidades incompletas e defeituosas!',
+            'Este módulo não funciona com o tipo de mapa "Mapkit" devido a limitações do Mapkit!',
+        dev: 'Este módulo continua em desenvolvimento. Ativá-lo pode provocar funcionalidades incompletas e defeituosas!',
         closeWarning: {
             title: 'Alterações não guardadas',
-            text: 'Fizeste alterações na AppStore que não foram guardadas. Restabelece, descarta ou guarda as alterações para fechar a AppStore.',
+            text: 'Fizeste alterações na AppStore que não foram guardadas. Repõe, descarta ou guarda as alterações para fechar a AppStore.',
             abort: 'Cancelar',
             saveAndExit: 'Guardar e Sair',
             exit: 'Sair sem guardar',
@@ -16,27 +16,37 @@ const modules = {
     settings: {
         name: 'Definições',
         save: 'Guardar',
-        discard: 'Descartar as alterações',
+        discard: 'Descartar alterações',
         reset: 'Restabelecer',
         export: 'Exportar',
         import: 'Importar',
-        donate: 'Doar Voluntariamente',
+        donate: 'doar voluntariamente',
+        appendableList: {
+            unique: {
+                title: 'valor duplo',
+                text: 'Não devem existir valores duplicados na coluna **{title}**. O valor **{value}** já existe!',
+                confirm: 'Ok',
+            },
+        },
         resetWarning: {
-            title: 'Restabelecer a configuração',
-            text: 'Realmente deseja restabelecer a configuração aos seus valores inicais? Isto não se pode ser recuperado!',
+            title: 'Reestabelecer a configuração',
+            text: 'Tens a certeza que queres reestabelecer a configuração aos seus valores padrão? Isto não se pode ser desfeito!',
             close: 'Cancelar',
             total: 'Todas as definições',
-            module: 'Só neste módulo',
+            module: 'Apenas deste módulo',
         },
         resetWarningSetting: {
             title: 'Restabelecer Definições',
-            text: 'Quer restablecer esta configuração <b>{setting}</b> do módulo <b>{module}</b> aos seus valores iniciais?',
+            text: 'Queres mesmo reestablecer esta configuração <b>{setting}</b> do módulo <b>{module}</b> aos seus valores padrão?',
             close: 'Cancelar',
             reset: 'Restabelecer',
         },
         closeWarning: {
             title: 'Alterações não guardadas',
-            text: 'Fizeste alterações nas definições que não foram guardadas. Restabelece, descarta ou guarda as alteraçóes para fechar as definições.',
+            text: 'Fizeste alterações nas definições que ainda não foram guardadas. Reestabelece, descarta ou guarda as alterações para fechar as definições.',
+            abort: 'Cancelar',
+            saveAndExit: 'Guardar e Sair',
+            exit: 'Exit without saving',
             close: 'Fechar mensagem',
         },
         changeList: {
@@ -49,19 +59,19 @@ const modules = {
 export default {
     modules,
     buildingCategories: {
-        Bombeiros: {
+        'Corpo de Bombeiros': {
             buildings: [0, 1, 18, 24],
             color: '#ff2d2d',
         },
-        Ambulâncias: {
+        'Posto PEM/AEM': {
             buildings: [2, 3, 5, 20, 21],
             color: '#ffa500',
         },
-        ['Polícia']: {
+        'Esquadra PSP/Posto GNR': {
             buildings: [6, 16, 19],
             color: '#00ac00',
         },
-        ['Resgate na água']: {
+        'Capitania': {
             buildings: [25, 26],
             color: '#00ac00',
         },
@@ -75,9 +85,7 @@ export default {
             vehicles: {
                 'Camião dos Bombeiros': [0, 1, 11],
                 'Tanque de Água': [6],
-                'Veículos Especializados': [
-                    53, 2, 7, 14, 24, 30, 29, 4, 15, 16, 28, 3, 10, 21,
-                ],
+                'Veículos Especializados': [53, 2, 7, 14, 24, 30, 29, 4, 15, 16, 28, 3, 10, 21],
                 'Veículos Florestais': [22, 23],
                 'Carros de Bombeiros de Aeroporto': [
                     46, 47, 48, 49, 50, 51, 52,
