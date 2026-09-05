@@ -72,7 +72,7 @@ export default {
             color: '#ffa500',
         },
         Polizei: {
-            buildings: [6, 8, 11, 13, 17, 19, 24],
+            buildings: [6, 8, 11, 13, 17, 19, 24, 29],
             color: '#00ac00',
         },
         THW: {
@@ -98,13 +98,13 @@ export default {
                 Schlauchwagen: [11, 13, 14, 15, 16],
                 Sonderfahrzeuge: [
                     2, 3, 4, 5, 10, 12, 27, 33, 34, 36, 53, 57, 114, 118, 120,
-                    126, 128, 129, 166, 167,
+                    126, 128, 129, 166, 167, 185,
                 ],
                 ['WLF & Abrollbehälter']: [
                     46, 47, 48, 49, 54, 62, 71, 77, 78, 108, 116, 117, 119, 142,
-                    169, 170,
+                    169, 170, 178, 179, 180,
                 ],
-                Anhänger: [115, 143, 168],
+                Anhänger: [115, 143, 168, 186],
                 Flughafenfeuerwehr: [75, 76],
                 Werkfeuerwehr: [83, 84, 85, 86],
                 Logistikfahrzeuge: [104, 105, 106, 107],
@@ -117,7 +117,7 @@ export default {
         Rettungsdienst: {
             vehicles: {
                 'Rettungsdienstfahrzeuge': [28, 29, 55, 56, 73, 74, 97],
-                'Rettungshubschrauber': [31],
+                'Rettungshubschrauber': [31, 157],
                 'KTW': [38],
                 'SEG-Fahrzeuge': [58, 59, 60],
                 'Rettungshundefahrzeuge': [91],
@@ -132,9 +132,9 @@ export default {
         },
         Polizei: {
             vehicles: {
-                'Funkstreifenwagen': [32, 95, 98, 103],
+                'Funkstreifenwagen': [32, 95, 98, 103, 184],
                 'Bereitschaftspolizei-Fahrzeuge': [35, 50, 51, 52, 72, 165],
-                'Polizeihubschrauber': [61, 96],
+                'Polizeihubschrauber': [61, 96, 156],
                 'SEK': [79, 80],
                 'MEK': [81, 82],
                 'Diensthunde': [94],
@@ -155,6 +155,8 @@ export default {
                 'MTW-OV': [124],
                 'Tr UL': [125],
                 'Fachzug Führung und Kommunikation': [144, 145, 146, 147, 148],
+                'Logistik-Verpflegung': [176, 177, 178],
+                'Fachgruppe Brückenbau': [181, 182, 183],
             },
             color: '#0000ff',
         },
@@ -282,6 +284,10 @@ export default {
         'Eisenbahntunnel',
         'Zoo',
         'Kohlekraftwerk',
+        'JVA',
+        'Solarpark',
+        'Raffinerie',
+        'Schiffswerft',
     ],
     only_alliance_missions: [41, 43, 59, 75, 99, 207, 221, 222, 256, 350],
     transfer_missions: [147, 613],
@@ -303,6 +309,9 @@ export default {
             2_000_000_000: 'Landesbrandmeister(in)',
             5_000_000_000: 'Ehrenmitglied',
             10_000_000_000: 'Stv. Bundesbranddirektor(in)',
+            20_000_000_000: 'Bundesbranddirektor(in)',
+            50_000_000_000: 'Stv. Internationale(r) Branddirektor(in)',
+            100_000_000_000: 'Internationaler Branddirektor(in)',
         },
         policechief: {
             0: 'Polizeimeisteranwärter(in)',
@@ -321,6 +330,9 @@ export default {
             2_000_000_000: 'Präsident(in) der Bundespolizeidirektion',
             5_000_000_000: 'Vizepräsident(in) der Bundespolizei',
             10_000_000_000: 'Präsident(in) der Bundespolizei',
+            20_000_000_000: 'Generalinspekteur(in) der Polizei',
+            50_000_000_000: 'Oberste(r) Polizeidirektor(in)',
+            100_000_000_000: 'Generaloberkommissar(in)',
         },
     },
 };

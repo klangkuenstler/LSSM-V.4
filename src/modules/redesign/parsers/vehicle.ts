@@ -95,6 +95,7 @@ interface BaseVehicleWindow {
     staff?: Record<string, string>;
     water?: string;
     foam?: string;
+    pump?: string;
 }
 
 export interface MissionsWindow extends BaseVehicleWindow {
@@ -161,9 +162,7 @@ export type EmptyVehicleWindow = BaseVehicleWindow & {
 };
 
 export type VehicleWindow =
-    | EmptyVehicleWindow
-    | MissionsWindow
-    | TransportRequestWindow;
+    EmptyVehicleWindow | MissionsWindow | TransportRequestWindow;
 
 export default <RedesignParser<VehicleWindow>>(({
     doc,
@@ -294,6 +293,9 @@ export default <RedesignParser<VehicleWindow>>(({
         foam:
             doc.querySelector<HTMLDivElement>('#vehicle-attr-foam-amount')
                 ?.textContent ?? undefined,
+        pump:
+            doc.querySelector<HTMLDivElement>('#vehicle-attr-pump-amount')
+                ?.textContent ?? undefined,
     };
 
     // there are missions => return a vehicle with missions
@@ -355,8 +357,7 @@ export default <RedesignParser<VehicleWindow>>(({
                         },
                         status:
                             (row.getAttribute('data-mission-status') as
-                                | Mission['status']
-                                | null) ?? 'red',
+                                Mission['status'] | null) ?? 'red',
                     };
                 })
                 .filter(removeUndefined);

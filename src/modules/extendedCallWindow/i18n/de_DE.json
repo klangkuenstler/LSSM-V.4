@@ -44,21 +44,21 @@
                     17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 30, 33, 34, 36,
                     37, 46, 53, 57, 75, 76, 83, 84, 85, 86, 87, 88, 89, 90, 104,
                     105, 106, 107, 114, 118, 120, 121, 126, 128, 129, 162, 163,
-                    166, 167
+                    166, 167, 185
                 ]
             },
             {
                 "texts": ["Polizisten"],
                 "vehicles": [
                     32, 35, 50, 51, 52, 61, 72, 79, 80, 81, 82, 94, 95, 98, 103,
-                    156
+                    156, 184
                 ]
             },
             {
                 "texts": ["THW-Einsatzkräfte"],
                 "vehicles": [
                     39, 40, 41, 42, 45, 65, 69, 93, 100, 109, 122, 123, 124,
-                    125, 144, 145, 147, 148
+                    125, 144, 145, 147, 148, 176, 177, 181, 182
                 ]
             },
             {
@@ -97,7 +97,8 @@
             "96": [61],
             "110": [41],
             "116": [46],
-            "146": [145]
+            "146": [145],
+            "178": [176]
         },
         "vehicle": "Fahrzeugtyp",
         "vehiclesByRequirement": [
@@ -111,7 +112,7 @@
                     "Betreuungs- und Verpflegungsausstattung",
                     "Betreuungs- und Verpflegungsausstattungen"
                 ],
-                "vehicles": [130, 132]
+                "vehicles": [130, 132, 139, 141, 178]
             },
             { "texts": ["Boot", "Boote"], "vehicles": [66, 67, 68, 70, 71] },
             { "texts": ["Bt-Kombi", "Bt-Kombis"], "vehicles": [131] },
@@ -183,7 +184,7 @@
                 "texts": ["Funkstreifenwagen (Dienstgruppenleitung)"],
                 "vehicles": [103]
             },
-            { "texts": ["FwK"], "vehicles": [57] },
+            { "texts": ["FwK"], "vehicles": [57, 182] },
             { "texts": ["FüKW (Polizei)"], "vehicles": [51] },
             {
                 "equipment": ["breathing_protection"],
@@ -288,7 +289,7 @@
                 "texts": ["Schmutzwasserpumpe", "Schmutzwasserpumpen"],
                 "vehicles": [101, 102]
             },
-            { "texts": ["THW-Einsatzleitung (MTW TZ)"], "vehicles": [40] },
+            { "texts": ["THW-Einsatzleitung (MTW-TZ)"], "vehicles": [40] },
             { "texts": ["MzGW (FGr N)"], "vehicles": [41] },
             { "texts": ["Teleskopmast", "Teleskopmasten"], "vehicles": [85] },
             { "texts": ["Turbolöscher"], "vehicles": [86] },
@@ -296,8 +297,8 @@
             { "texts": ["Wasserwerfer"], "vehicles": [72] },
             { "texts": ["Zivilstreifenwagen"], "vehicles": [98] },
             { "texts": ["leBefKw"], "vehicles": [35] },
-            { "texts": ["NEA50"], "vehicles": [110, 111, 112, 113, 175] },
-            { "texts": ["NEA200"], "vehicles": [112, 113] },
+            { "texts": ["NEA50"], "vehicles": [110, 111, 112, 113, 175, 179] },
+            { "texts": ["NEA200"], "vehicles": [112, 113, 180] },
             { "texts": ["MzGW SB"], "vehicles": [109] },
             { "texts": ["FüKW (THW)"], "vehicles": [144] },
             { "texts": ["FüKomKW"], "vehicles": [145] },
@@ -346,9 +347,18 @@
                 "vehicles": [162, 163, 164]
             },
             { "texts": ["LauKw"], "vehicles": [165] },
-            { "texts": ["MTW TeSi"], "vehicles": [173] },
-            { "texts": ["GW TeSi"], "vehicles": [171] },
-            { "texts": ["Anh TeSi"], "vehicles": [174] }
+            { "texts": ["MTW-TeSi"], "vehicles": [173] },
+            { "texts": ["GW-TeSi"], "vehicles": [171] },
+            { "texts": ["Anh TeSi"], "vehicles": [174] },
+            { "texts": ["MzGW (FGr BrB)"], "vehicles": [181] },
+            { "texts": ["Mobilkran", "Mobilkräne"], "vehicles": [57, 182] },
+            { "texts": ["Anh Plattform (FGr BrB)"], "vehicles": [183] },
+            { "texts": ["FuStW (AP)"], "vehicles": [184] },
+            {
+                "equipment": ["animal_rescue"],
+                "texts": ["GW-Tierrettung"],
+                "vehicles": [185, 186]
+            }
         ],
         "water": "l. Wasser"
     },

@@ -217,6 +217,17 @@ export default ((MODULE_ID, LSSM, $m) => {
                       },
               }
             : null),
+        ...(locale === 'nl_NL'
+            ? {
+                  'optionalAlternatives.allow_traffic_car_instead_of_fustw': <
+                      Toggle
+                  >{
+                      type: 'toggle',
+                      default: false,
+                      dependsOn: '.vehicles.content',
+                  },
+              }
+            : null),
         'patients.title': <Toggle>{
             type: 'toggle',
             default: true,
@@ -287,7 +298,7 @@ export default ((MODULE_ID, LSSM, $m) => {
             type: 'toggle',
             default: true,
         },
-        ...(['en_US'].includes(locale)
+        ...(['en_US', 'nl_NL'].includes(locale)
             ? {
                   'towtruck.title': <Toggle>{
                       type: 'toggle',
@@ -295,7 +306,7 @@ export default ((MODULE_ID, LSSM, $m) => {
                   },
               }
             : null),
-        ...(['en_US'].includes(locale)
+        ...(['en_US', 'nl_NL'].includes(locale)
             ? {
                   'towtruck.content': <Toggle>{
                       type: 'toggle',
@@ -393,7 +404,7 @@ export default ((MODULE_ID, LSSM, $m) => {
                   },
               }
             : null),
-        ...(['fr_FR', 'en_GB'].includes(locale)
+        ...(['fr_FR', 'en_GB', 'nl_NL'].includes(locale)
             ? null // note that it is disabled on above locales
             : {
                   'optionalAlternatives.allow_police_motorcycle_instead_of_fustw':

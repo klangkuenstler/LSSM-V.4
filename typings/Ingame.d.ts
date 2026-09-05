@@ -113,8 +113,7 @@ interface GenericMissionMarkerAdd extends MissionMarkerAddBase {
 }
 
 export type MissionMarkerAdd =
-    | GenericMissionMarkerAdd
-    | RegularMissionMarkerAdd;
+    GenericMissionMarkerAdd | RegularMissionMarkerAdd;
 
 export type MissionTimer = MissionMarkerAdd & {
     date_end_calc: number;
@@ -171,6 +170,14 @@ export interface BuildingMarkerAdd {
     building_type: number;
     filter_id: string;
     detail_button: string;
+}
+
+export interface BuildingMarkerCache extends BuildingMarkerAdd {
+    icon_other: string;
+    building_marker_image: string;
+    markerType: 'b';
+    zIndexOffset: number;
+    flavour_url: string;
 }
 
 export interface MissionGraphicsLookup {

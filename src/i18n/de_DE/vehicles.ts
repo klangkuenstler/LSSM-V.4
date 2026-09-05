@@ -138,6 +138,7 @@ export default {
         icon: 'truck',
         possibleBuildings: [0, 18],
         waterBonus: 25,
+        equipmentCapacity: 10,
         special:
             'Ein Schlauchwagen wird ab 7 Feuerwachen benötigt. Er gibt 25% Bonus auf die Wassermenge, die durch (H/T)LF vor Ort ist.',
     },
@@ -816,7 +817,8 @@ export default {
         },
         icon: 'truck',
         possibleBuildings: [0, 18],
-        special: 'Wird ab 14 Feuerwachen benötigt.',
+        special:
+            'Wird ab 14 Feuerwachen benötigt. Kann durch den Mobilkran des THW ersetzt werden',
     },
     58: {
         caption: 'KTW Typ B',
@@ -2944,7 +2946,7 @@ export default {
         icon: 'car-side',
         possibleBuildings: [12],
         isTrailer: true,
-        tractiveVehicles: [171],
+        tractiveVehicles: [171, 173],
         special:
             'Der Anhänger Technik und Sicherheit wird bei SEG-Einsätzen für den Transport von technischer Ausrüstung und den Infrastrukturaufbau genutzt. Es handelt sich um einen Anhänger, der ein Zugfahrzeug benötigt. (GW TeSi)',
     },
@@ -2970,5 +2972,212 @@ export default {
         tractiveVehicles: [172],
         special:
             "Es handelt sich um einen Anhänger, der ein Zugfahrzeug benötigt. (LKW Technik (Notstrom)). Ist gleichwertig mit den anderen beiden NEA50's",
+    },
+    176: {
+        caption: 'LKW 7 Lbw (FGr Log-V)',
+        color: '#36759e',
+        credits: 15_000,
+        coins: 25,
+        staff: {
+            min: 3,
+            max: 3,
+            training: {
+                THW: {
+                    thw_care_service: {
+                        min: 1,
+                    },
+                    care_service_equipment: {
+                        min: 2,
+                    },
+                },
+            },
+        },
+        icon: 'truck',
+        possibleBuildings: [9],
+        special: '',
+    },
+    177: {
+        caption: 'MTW-FGr Log-V',
+        color: '#36759e',
+        credits: 2500,
+        coins: 12,
+        staff: {
+            min: 5,
+            max: 5,
+            training: {
+                THW: {
+                    thw_care_service: {
+                        all: true,
+                    },
+                },
+            },
+        },
+        icon: 'car-side',
+        possibleBuildings: [9],
+    },
+    178: {
+        caption: 'Anh 12 Lbw (FGr Log-V)',
+        color: '#36759e',
+        credits: 5000,
+        coins: 12,
+        staff: {
+            min: 0,
+            max: 0,
+        },
+        icon: 'car-side',
+        possibleBuildings: [9],
+        isTrailer: true,
+        tractiveVehicles: [176],
+        special:
+            'Der Anh 12 Lbw (FGr Log-V) dient zur Verpflegung von Einsatzkräften und Betroffenen und ist Teil der Betreuungs- und Verpflegungsausstattung. Er hat somit dieselbe Funktion wie der Anh FKH der Feuerwehr.',
+    },
+    179: {
+        caption: 'AB-NEA50',
+        color: '#f60303',
+        credits: 5000,
+        coins: 12,
+        staff: {
+            min: 0,
+            max: 0,
+        },
+        icon: 'square',
+        special: '',
+        possibleBuildings: [0, 18],
+        isTrailer: true,
+        tractiveVehicles: [46],
+    },
+    180: {
+        caption: 'AB-NEA200',
+        color: '#fd090f',
+        credits: 8000,
+        coins: 12,
+        staff: {
+            min: 0,
+            max: 0,
+            training: {
+                Feuerwehr: {
+                    energy_supply: {
+                        min: 1,
+                    },
+                },
+            },
+        },
+        icon: 'square',
+        special: '',
+        isTrailer: true,
+        tractiveVehicles: [46],
+        possibleBuildings: [0],
+    },
+    181: {
+        caption: 'MzGW (FGr BrB)',
+        color: '#001bcc',
+        credits: 15_000,
+        coins: 25,
+        staff: {
+            min: 6,
+            max: 9,
+            training: {
+                THW: {
+                    thw_bridge_construction: {
+                        all: true,
+                    },
+                },
+            },
+        },
+        icon: 'truck-pickup',
+        possibleBuildings: [9],
+    },
+    182: {
+        caption: 'Mobilkran',
+        color: '#001bcc',
+        credits: 30_000,
+        coins: 25,
+        staff: {
+            min: 1,
+            max: 1,
+            training: {
+                THW: {
+                    thw_bridge_construction_crane: {
+                        all: true,
+                    },
+                },
+            },
+        },
+        icon: 'truck',
+        possibleBuildings: [9],
+        special: 'Kann durch den FwK ersetzt werden',
+    },
+    183: {
+        caption: 'Anh Plattform (FGr BrB)',
+        color: '#001bcc',
+        credits: 50_000,
+        coins: 20,
+        staff: {
+            min: 0,
+            max: 0,
+            training: {
+                THW: {
+                    thw_bridge_construction: {
+                        min: 6,
+                    },
+                },
+            },
+        },
+        icon: 'trailer',
+        special:
+            'Es handelt sich um einen Anhänger, der ein Zugfahrzeug benötigt. (MzGW (FGr BrB))',
+        isTrailer: true,
+        tractiveVehicles: [181],
+        possibleBuildings: [9],
+    },
+    184: {
+        caption: 'FuStW (AP)',
+        color: '#005500',
+        credits: 12_500,
+        coins: 25,
+        staff: {
+            min: 2,
+            max: 2,
+            training: {
+                Polizei: {
+                    highway_police: {
+                        all: true,
+                    },
+                },
+            },
+        },
+        icon: 'taxi',
+        possibleBuildings: [6, 19, 29],
+    },
+    185: {
+        caption: 'GW-Tierrettung',
+        color: '#b12f26',
+        credits: 15_000,
+        coins: 25,
+        staff: {
+            min: 2,
+            max: 6,
+        },
+        icon: 'truck',
+        possibleBuildings: [0, 18],
+    },
+    186: {
+        caption: 'Anh Tierrettung',
+        color: '#d63c3c',
+        credits: 6500,
+        coins: 10,
+        staff: {
+            min: 0,
+            max: 0,
+        },
+        icon: 'trailer',
+        special:
+            'Es handelt sich um einen Anhänger, der ein Zugfahrzeug benötigt. (HLF 10, RW, GW-Gefahrgut, Dekon-P, GW-L1, GW-L2, LF 10, LF 8/6, LF 10/6, LF 16-TS, SW 2000-Tr, SW-KatS, TLF 3000, TLF 16/24-Tr, TLF 16/25, MTW, TSF-W, MLF, KLF, GW-A, GW-Tierrettung)',
+        isTrailer: true,
+        tractiveVehicles: [
+            90, 4, 27, 53, 104, 105, 1, 5, 6, 8, 9, 15, 16, 18, 21, 22, 36, 37,
+            88, 89, 185,
+        ],
+        possibleBuildings: [0, 18],
     },
 } satisfies Record<number, InternalVehicle>;

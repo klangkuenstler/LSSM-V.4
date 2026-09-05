@@ -47,12 +47,7 @@ interface Types {
             department: boolean[];
         };
         sort:
-            | 'caption'
-            | 'department'
-            | 'distance'
-            | 'freeBeds'
-            | 'list'
-            | 'tax';
+            'caption' | 'department' | 'distance' | 'freeBeds' | 'list' | 'tax';
         additional: {
             disableReleaseConfirmation: boolean;
             showEach: number;
@@ -142,6 +137,7 @@ export type RedesignVehicleComponent = RedesignComponent<
         };
         faPalette: IconDefinition;
         faEdit: IconDefinition;
+        faScrewdriverWrench: IconDefinition;
         faChartLine: IconDefinition;
         faUsers: IconDefinition;
         faTrash: IconDefinition;
